@@ -117,6 +117,11 @@ class Inbound {
     {
         return self::_parseRecipients($this->Source->CcFull);
     }
+    
+    public function BccRecipients()
+    {
+        return self::_parseRecipients($this->Source->BccFull);
+    }
 
     private static function _parseRecipients($recipients)
     {
