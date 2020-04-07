@@ -64,7 +64,7 @@ $inbound->Headers('Message-ID');
 ``` 
 
 
-Recipients and Undisclosed Recipients
+Recipients, Undisclosed (Cc) Recipients and Bcc Recipients
 -------------------------------------
 
 ``` php
@@ -76,6 +76,10 @@ foreach($inbound->Recipients() as $recipient) {
 foreach($inbound->UndisclosedRecipients() as $undisclosedRecipient) {
 	$undisclosedRecipient->Name;
 	$undisclosedRecipient->Email;
+}
+foreach($inbound->BccRecipients() as $bccRecipient) {
+	$bccRecipient->Name;
+	$bccRecipient->Email;
 }
 ``` 
 
