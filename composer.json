@@ -2,7 +2,7 @@
     "name": "janiskelemen/postmark-inbound-php",
     "type": "library",
     "description": "Postmark Inbound PHP Wrapper",
-    "version": "3.0.3",
+    "version": "3.0.4",
     "homepage": "https://github.com/janiskelemen/postmark-inbound-php",
     "keywords": ["postmark", "inbound", "wrapper", "api", "mails"],
     "license": "MIT",
