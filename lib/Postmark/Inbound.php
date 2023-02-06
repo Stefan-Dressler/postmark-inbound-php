@@ -66,7 +66,7 @@ class Inbound {
 
     public function __call($name, $arguments)
     {
-        return (method_exists($this->Source, $name) && $this->Source->$name) ? $this->Source->$name : FALSE;
+        return (property_exists($this->Source, $name) && $this->Source->$name) ? $this->Source->$name : FALSE;
     }
 
     public function FromEmail()
